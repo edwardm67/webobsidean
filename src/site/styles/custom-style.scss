@@ -1,13 +1,24 @@
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+/* Estilo TopFlow AI */
+.topflow-style {
+  --background-primary: #050505 !important;
+  --background-secondary: #0f0f12 !important;
+  --text-normal: #d1d1d1 !important;
+  --text-accent: #00e5ff !important;
+  --interactive-accent: #00e5ff !important;
+  --h1-color: #ffffff !important;
+  
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+
+  h1, h2, h3 {
+    color: var(--h1-color);
+  }
+
+  a {
+    color: var(--text-accent);
+    &:hover {
+      text-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    }
+  }
 }
